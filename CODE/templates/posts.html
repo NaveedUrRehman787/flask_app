@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block head%}
+<title>Post2</title>
+{% endblock %} {% block body %}
+<h3>Welcome! To Our Blogs</h3>
+<form method="post" ,action="/posts">
+  <label for="username">Title: </label>
+  <input
+    type="text"
+    id="username"
+    name="username"
+    placeholder="enter a title"
+  /><br />
+
+  <label for="password">Content:</label>
+  <input
+    type="text"
+    name="password"
+    id="password"
+    placeholder="content goes here"
+  /><br />
+
+  <label for="author">Author:</label>
+  <input id="author" name="author" placeholder="author" /><br />
+
+  <label for="subject">Subject:</label>
+  <input id="subject" name="subject" placeholder="subject" /><br />
+
+  <label for="cat">Category:</label>
+  <input id="category" name="category" placeholder="category" /><br />
+
+  <input type="submit" name="submit" value="SUBMIT" />
+</form>
+
+{% for post in posts%}
+<h2>{{post.username}}</h2>
+<p>{{post.password}}</p>
+<p>{{post.author}}</p>
+<p>{{post.subject}}</p>
+<p>{{post.category}}</p>
+
+{% endfor %} {% endblock %}

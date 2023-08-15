@@ -1,0 +1,24 @@
+body{
+    background-color: burlywood;
+    font-family: Helvetica;
+}
+form > input{
+  padding: 8px 20px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+#username{
+    margin-left: 140px;
+}
+#password{
+    margin-left: 113px;
+}
+#author{
+    margin-left: 122px;
+}
+#subject{
+    margin-left: 115px;
+}
+#category{
+    margin-left: 105px;
+}
